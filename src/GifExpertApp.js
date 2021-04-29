@@ -11,7 +11,7 @@ export default function GifExpertApp() {
 
   return (
     <>
-      <h2>GifExpertApp</h2>
+      <h2>GifExpert</h2>
       <AddCategory setCategories={setCategories} />
       <hr />
 

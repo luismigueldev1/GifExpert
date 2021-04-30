@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas para GifGridItem debe retornar el componente y hacer match con el snapshot 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="yu gi oh GIF"
+    src="https://media2.giphy.com/media/11zNrvy5Xh5gFa/giphy.gif?cid=cf8f0d8045ww5upcupkqnscdzxh72meo24oob66x9iltsqh5&rid=giphy.gif&ct=g"
+  />
+  <p>
+    yu gi oh GIF
+  </p>
+</div>
+`;

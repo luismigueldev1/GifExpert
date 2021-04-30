@@ -6,7 +6,7 @@ import GifExpertApp from "./GifExpertApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <GifExpertApp />
+    <GifExpertApp defaultCategories={["YuGiOh!"]} />
   </React.StrictMode>,
   document.getElementById("root")
 );

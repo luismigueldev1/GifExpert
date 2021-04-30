@@ -9,15 +9,19 @@ function AddCategory({ setCategories }) {
   };
 
   const handleSubmit = (event) => {
-    const fixedInputValue = inputValue.trim();
     event.preventDefault();
-    setCategories((categories) => {
-      const isAlreadyExist = categories.find((cat) => cat === fixedInputValue);
-      if (!fixedInputValue || isAlreadyExist || fixedInputValue <= 2)
-        return [...categories];
-      return [fixedInputValue, ...categories];
-    });
-    setInputValue("");
+    const fixedInputValue = inputValue.trim();
+
+    if (fixedInputValue) {
+      setCategories((categories) => {
+        const isAlreadyExist = categories.find(
+          (cat) => cat === fixedInputValue
+        );
+        if (isAlreadyExist) return [...categories];
+        return [fixedInputValue, ...categories];
+      });
+      setInputValue("");
+    }
   };
 
   return (
@@ -30,6 +34,7 @@ function AddCategory({ setCategories }) {
         value={inputValue}
         onChange={handleInputChange}
       />
+      <button type="submit">Search</button>
     </form>
   );
 }
